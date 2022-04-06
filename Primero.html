@@ -1,0 +1,36 @@
+<hyml>
+    <head>
+        <style>
+            body { background-color: aqua;}
+            h1 {color: brown;}
+            p{font-size: 25px;
+                color: darkblue;}
+        </style>
+    </head>
+    <body>
+            <h1>Calculá tu peso en la luna</h1>
+            <p>Conocé cual es tu peso en la luna</p>
+
+        <script>
+            var usuario = prompt("cual es tu peso?");
+            var lugar = parseInt(prompt("que lugar elije? 1 la luna 2 jupiter"));
+            var gtierra = 9.8;
+            var gluna = 1.6;
+            var gjupiter = 24.8;
+            var peso =parseInt(usuario);
+            var peso_final;
+            var nombre
+            if (lugar ==1){
+                peso_final = peso * gluna / gtierra;
+                nombre = luna
+            } else if (lugar == 2){
+                peso_final = peso * gjupiter / gtierra;
+                nombre = jupiter
+            } else {
+                peso_final = 10000000;
+            }
+            peso_final = parseInt(peso_final);
+            document.write ("tu peso en " + nombre + " es " + peso_final + "kilogramos")
+        </script>
+    </body>
+</hyml>
