@@ -11,9 +11,55 @@
         <section>
             <h3>Formulario de registro</h3>
             <form action=""> 
+                
                 <label for="nombre"> Ingrese su nombre
-                    <imput type="text" id="nombre" placeholder=""></imput>
+                    <input type="text" id="nombre" placeholder="Coloque su nombre">
 
+                </label><br> <br>
+                <label for="apellido"> Ingrese su nombre
+                    <input type="text" id="apellido" placeholder="Coloque su apellido">
+                </label> <br><br>
+                
+                <label for="correo"> Ingrese su correo
+                    <input type="text" id="correo" placeholder="ingrese su correo">
+                </label><br><br>
+
+                <label> ¿Que habitacion prefiere?<br>
+                    <input type="checkbox"  name="Chica" value=""> Chica<br>
+                    <input type="checkbox"  name="Mediana" value=""> Mediana<br>
+                    <input type="checkbox"  name="Grande" value=""> Grande<br>
+
+                </label><br><br>
+
+                <label> ¿Desea servicio a la habitacion?<br>
+                    <input type="radio" name="habitacion" value="si"> Si <br>
+                    <input type="radio" name="habitacion" value="no"> No <br>
+
+                </label><br>
+                
+                <label for="pais"> seleciona pais de procedencia
+                    <select name="pais" id="pais">
+                        <option value="" disabled selected>Pais</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Bolivia">Bolivia</option>
+                        
+
+                    </select>
+
+                </label><br><br>
+                <label>Escriba informacion extra<br>
+                    <textarea name="texto" maxlength="300" rows="" cols=""></textarea>    
+                
+                </label><br><br>
+
+                <label>
+                        <input type="button" value="Boton">
+                        <input type="reset" value="Reseteador">
+                        <button type="submit">Enviar</button>
                 </label>
             </form>
         </section>
